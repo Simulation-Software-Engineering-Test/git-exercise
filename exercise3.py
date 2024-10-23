@@ -41,7 +41,8 @@ class Rectangle:
     def _is_idx_on_right_edge(self, i: int) -> bool:
         return i in [1, 3]
 
-    # def is_in_interval(...) -> bool: # Task A
+    def is_in_interval(i:float, start:float, end:float) -> bool: # Task A
+        return i >= start and i <= end
 
 
 def test_rectangle_contains_exact() -> None:
